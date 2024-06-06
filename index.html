@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="img/logo-pestana.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd1f15199d.js" crossorigin="anonymous"></script>
+    
+    <title> ADRIANA PARDO </title>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-start"> <a href="index.html"> <img src="icons/LOGO.png" style="width: 400px;height: 160px;"> </a> </div>
+            <ul class="links">
+                <li><a href="#"> HOME </a></li>
+                <li><a href="#"> ABOUT </a></li>
+                <li><a href="#"> CONTACT </a></li>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+            <div class="menu-down">
+                <li> <a href="#"> HOME </a></li>
+                <li> <a href="#"> ABOUT </a></li>
+                <li> <a href="#"> CONTACT </a></li>
+            </div>
+        </div>    
+    </header>
+
+    <section>
+        <!-- slider start-->
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="img/Frente.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/hojaro.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_0280.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_0281.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_0283.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/LightBlue.JPG" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="img/Frente.JPG" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/hojaro.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_0280.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_0281.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/IMG_0283.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/LightBlue.JPG" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- slider end -->
+
+        <!-- IMG's start -->
+        <div class="container">
+            <div class="card">
+                <div class="card1"> <img src="img/pulsera.png" alt="" class="card-image" /> </div>
+                <div class="descrip">
+                    <div class="name"> <h3> Men's Bracelet </h3> </div>
+                    <div class="price"> <h3> $45.00 USD </h3> </div>
+                    <!-- ( carrito de compra ) <i class="fa-solid fa-cart-shopping"></i> -->
+                </div>
+            </div>
+            
+
+
+
+        <!-- IMG's end -->
+
+        <div class="logo-end"> <a href="index.html"> <img src="icons/LOGO.png" style="width: 400px;height: 160px;"> </a> </div>
+
+    </section>
+
+
+    <footer>
+        <div class="center full_width social_links">
+            <div class="row">
+                <a href="#"> <img class="social" width=60 src="icons/Facebook.png"> </a>
+                <a href="#"> <img class="social" width=60 src="icons/Instagram.png"> </a>
+                <a href="#"> <img class="social" width=60 src="icons/Etsy.webp"> </a>
+            </div>
+        </div>
+        
+        <div class="made-with">
+            <p> Made by Diego Martin. </p>
+            <p> © 2024 All Rights Reserved. </p>
+        </div>
+    </footer>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+
+    <script>
+        const toggleBtn = document.querySelector('.menu-btn')
+        const toggleBtnIcon = document.querySelector('.menu-btn i')
+        const MenuDown = document.querySelector('.menu-down')
+
+        toggleBtn.onclick = function () {
+            MenuDown.classList.toggle('open')
+            const isOPen = MenuDown.classList.contains('open')
+
+            toggleBtnIcon.classList = isOPen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
