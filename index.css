@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #016efe;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    padding: 0 2rem;
+    padding: 1.3em;
+}
+
+.logo {
+    display: grid;
+    place-items: center;
+    box-shadow: 3px #aaa;
+}
+
+.navar .links {
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    gap: 2rem;
+}
+
+.navar .menu-btn {
+    color: #016efe;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* HEADER MENU DOWN */
+.menu-down {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 75px;
+    height: 0;
+    width: 200px;
+    width: 0rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-down.open {
+    height: 120px;
+}
+
+.menu-down li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* RESPONSIVE para PC ( Pendiente modificar ) */
+@media (max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action-btn {
+        display: none;
+    }
+
+    .navbar .menu-btn,
+    .hero .hero-content {
+        display: block;
+    }
+
+    .menu-down {
+        display: block;
+    }
+
+    .logo {
+        font-size: 1.9rem;
+    }
+
+    .hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left {
+        padding: 60px;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .right {
+        image-rendering: auto;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .menu-down {
+        left: 2rem;
+        width: unset;
+    }
+}
