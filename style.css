@@ -30,24 +30,23 @@ a:hover {
     color: orange;
 }
 
-.fab {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
+/* btn WhatsApp Start */
+.btn-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+}
+
+.btn-wsp:hover {
     text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
 }
 
-.fab:hover {
-    opacity: 0.7;
-}
+/* btn WhatsApp End */
 
-.fa-whatsapp {
-    background: #45bbff;
-    color: white;
-}
 
 /* HEADER */
 header {
@@ -120,7 +119,7 @@ header {
     justify-content: center;
 }
 
-/* SECTION SLIDER */
+/* SECTION SLIDER START */
 .slider {
     /* width: 75vw; */
     height: auto;
@@ -147,8 +146,10 @@ header {
     padding: 10px;
 }
 
+/* SECTION SLIDER END */
 
-/* SECTION IMG's */
+
+/* PORTFOLIO START */
 .container {
     /* position: relative; */
     padding: 70px 10px 25px 10px;
@@ -206,14 +207,82 @@ header {
     color: crimson;
 }
 
+/* PORTFOLIO END */
+
+/* Review Start */
+.reviews {
+    margin-top: 2rem;
+    align-items: center;
+    color: crimson;
+}
+
+.reviews h2,
+h4 {
+    /* falat centrarlos */
+}
+
+.slider-reviews {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+    width: calc(200px * 4);
+}
+
+.reviews-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.box {
+    padding: 35px;
+    background: red;
+    border-radius: 3rem;
+}
+
+.box p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 1.5rem;
+}
+
+.in-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bx-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.bxx-text h4 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.bxx-text h5 {
+    color: #016efe;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.ratings {
+    color: aqua;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Review END */
 .logo-end {
     padding: 3rem 0rem 0rem 0rem;
 }
-
-
-
-
-
 
 /* FOOTER */
 footer {
@@ -271,7 +340,7 @@ footer {
 
 
 
-
+/* SECTION SLIDER START */
 /* nos permite animar las img's section slider*/
 @keyframes scroll {
     0% {
@@ -284,3 +353,5 @@ footer {
         transform: translateX(calc(-200px *6));
     }
 }
+
+/* SECTION SLIDER END */
