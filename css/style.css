@@ -204,17 +204,17 @@ header {
 
 .descrip {
     display: block;
+    font-size: larger;
     margin-top: 28rem;
 }
 
 .name {
-    color: blueviolet;
-    padding: 0rem 8rem 0rem 8rem;
+    color: #000000;
+    padding: 0rem 8rem 0rem 9rem;
 }
 
 .price {
-    color: crimson;
-
+    color: #000000;
     padding: 0rem 8rem 0rem 8rem;
 }
 
