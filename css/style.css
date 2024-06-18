@@ -204,13 +204,12 @@ header {
 
 .descrip {
     display: block;
-    font-size: larger;
     margin-top: 28rem;
 }
 
 .name {
     color: #000000;
-    padding: 0rem 8rem 0rem 9rem;
+    padding: 0rem 8rem 0rem 8rem;
 }
 
 .price {
