@@ -64,11 +64,29 @@
             <p> Pavo Verde </p> <p> $45.00 USD </p>
         </div>
         <br/ >
+
+        <!-- SELECTOR-COLOR START -->
         <div>
             <h2> Color: Elige una opción </h2>
             <h2> Mas opciones disponibles </h2>
-            <input type="checkbox" href="/portfolio/pavo/prc/1.png" >
+            <!-- <input type="checkbox" href="/portfolio/pavo/prc/1.png" > -->
+            <label class="selector-color">
+                RED
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="selector-color">
+                BLUE
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
+            <label class="selector-color">
+                GREEN
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+            </label>
         </div>
+        <!-- SELECTOR-COLOR START -->
         <br/ >
         <div>
             <h2> Descripción </h2>
@@ -94,6 +112,7 @@
         </div>
     </footer>
 
+    <!-- MENU HAMBURGER START -->
     <script>
         const toggleBtn = document.querySelector('.menu-btn')
         const toggleBtnIcon = document.querySelector('.menu-btn i')
@@ -108,6 +127,7 @@
                 : 'fa-solid fa-bars'
         }
     </script>
+    <!-- MENU HAMBURGER END -->
 
 
 
