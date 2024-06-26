@@ -28,7 +28,6 @@ a {
 
 a:hover {
     color: #109f8c;
-    /* color: #860bcd */
 }
 
 /* btn WhatsApp Start */
@@ -50,12 +49,12 @@ a:hover {
 
 /* btn es-en Start */
 .es-en {
+    padding: 0.54rem 0rem 0rem 0rem;
     position: fixed;
     width: 55px;
     height: 55px;
     line-height: 55px;
     bottom: 30px;
-    /* right: 30px; */
     left: 30px;
     z-index: 100;
 }
