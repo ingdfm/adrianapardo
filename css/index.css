@@ -87,6 +87,10 @@ header {
     justify-content: space-between;
 }
 
+.navbar .logo {
+    padding-left: 1rem;
+}
+
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
@@ -200,6 +204,11 @@ header {
 
 .card:hover .card-image {
     transform: scale(1.15);
+}
+
+.name-price {
+    display: block;
+    margin-top: 28rem;
 }
 
 .name-price {
