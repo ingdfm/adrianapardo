@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="peacockred.css">
+    <script src="https://kit.fontawesome.com/dd1f15199d.js" crossorigin="anonymous"></script>
+    <title> ADRIANA PARDO </title>
+    <link rel="icon" href="/icons/logo-pestana.ico">
+</head>
+<body>
+    <header>
+        <!-- Menu Start -->
+        <div class="navbar">
+            <div class="logo-start"> <a href="/index.html"> <img src="/icons/LOGO.png" style="width: 400px; height: 160px;"> </a> </div>
+            <ul class="links">
+                <li><a href="/index.html"> HOME </a></li>
+                <li><a href="/about.html"> SOBRE MI </a></li>
+                <li><a href="/contact.html"> CONTACTO </a></li>
+                <!-- <li><a href="reviews.html"> NUESTROS CLIENTES </a></li> -->
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="menu-down">
+                <li> <a href="/index.html"> HOME </a></li>
+                <li> <a href="/about.html"> SOBRE MI </a></li>
+                <li> <a href="/contact.html"> CONTACTO </a></li>
+                <!-- <li><a href="#"> NUESTROS CLIENTES </a></li> -->
+            </div>
+        </div>
+        <!-- Menu End -->
+    </header>
+
+    <!-- btn WhatsApp Start -->
+    <a href="https://wa.me/16827043778/" text=" Hola, buenos dias. Estoy interesada(o) en: " class="btn-wsp " target="_blank"> <img src="/icons/whatsapp.png" width="70" height="70"> <i class="icon-wsp"> </i> </a>
+    <!-- btn WhatsApp End -->
+
+    <!-- btn language Start -->
+    <a href="/es/index.html" class="es-en" target="_blank"> <img src="/icons/spain-flag.png" width="70"> <i class="icon-wsp"> </i> </a>
+    <!-- btn language End -->
+
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="card1"> <a href="#"> <img src="/portfolio/pavo/prc/1.png" alt="" class="card-image" /> </a> </div>
+                <div class="descrip">
+                    <div class="name"> <h3> Pavo Rojo </h3> </div>
+                    <div class="price"> <h3> $45.00 USD </h3> </div>
+                    <!-- ( carrito de compra ) <i class="fa-solid fa-cart-shopping"></i> -->
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p> Pavo Verde </p> <p> $45.00 USD </p>
+        </div>
+        <br/ >
+
+        <!-- SELECTOR-COLOR START -->
+        <div>
+            <h2> Color: Elige una opción </h2>
+            <h2> Mas opciones disponibles </h2>
+            <div>
+                <a class="btn-red" href="#"> </a>
+                <a class="btn-green" href="/portfolio/pavo/pavo.html"> </a>
+                <a class="btn-blue" href="#"> </a>
+            </div>
+        </div>
+        <!-- SELECTOR-COLOR START -->
+        <br/ >
+        <div>
+            <h2> Descripción </h2>
+            <p> Descubra los aretes de cuentas hechos a mano en punto peyote. Moderno, único y perfecto para mujeres. ¡Un regalo reflexivo! ¡Compra ahora y crea momentos inolvidables! </p>
+
+            <p> Estos pendientes los hice con mucha dedicación, prestando atención a cada detalle y poniendo mi mejor esfuerzo en darle un toque especial a cada pieza. Todo el producto está 100% hecho a mano. Estoy segura de que te encantarán estos pendientes tanto como a mí me encantó hacerlos.</p>
+        </div>
+
+        
+
+
+
+    </section>
+
+    <footer>
+        <div class="center full_width social_links">
+            <div class="row">
+                <a href="#"> <img class="social" width="60" src="/icons/Facebook.png"> </a>
+                <a href="https://www.instagram.com/adrianapardo.designs/" target="_blank"> <img class="social" width=60 src="icons/Instagram.png"> </a>
+                
+                <a href="https://www.etsy.com/shop/AdrianaPardoStore?ref=seller-platform-mcnav&dd_referrer=" target="_blank"> <img class="social" width=60 src="icons/Etsy.webp" target="_blank"> </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MENU HAMBURGER START -->
+    <script>
+        const toggleBtn = document.querySelector('.menu-btn')
+        const toggleBtnIcon = document.querySelector('.menu-btn i')
+        const MenuDown = document.querySelector('.menu-down')
+
+        toggleBtn.onclick = function () {
+            MenuDown.classList.toggle('open')
+            const isOPen = MenuDown.classList.contains('open')
+
+            toggleBtnIcon.classList = isOPen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <!-- MENU HAMBURGER END -->
+
+
+
+
+
+
+
+
+</body>
+</html>
