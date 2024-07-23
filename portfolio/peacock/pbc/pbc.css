@@ -146,8 +146,8 @@ header {
 }
 
 .slider1:hover {
-    border-color: #29d43d;
-    background-color: #29d43d;
+    border-color: #016efe;
+    background-color: #016efe;
 }
 
 .slider2 {
@@ -164,8 +164,8 @@ header {
 }
 
 .slider2:hover {
-    border-color: #29d43d;
-    background-color: #29d43d;
+    border-color: #016efe;
+    background-color: #016efe;
 }
 
 .slider3 {
@@ -182,8 +182,8 @@ header {
 }
 
 .slider3:hover {
-    border-color: #29d43d;
-    background-color: #29d43d;
+    border-color: #016efe;
+    background-color: #016efe;
 }
 
 .slider4 {
@@ -200,8 +200,8 @@ header {
 }
 
 .slider4:hover {
-    border-color: #29d43d;
-    background-color: #29d43d;
+    border-color: #016efe;
+    background-color: #016efe;
 }
 
 .slider5 {
@@ -218,8 +218,8 @@ header {
 }
 
 .slider5:hover {
-    border-color: #29d43d;
-    background-color: #29d43d;
+    border-color: #016efe;
+    background-color: #016efe;
 }
 
 .slider6 {
@@ -236,8 +236,8 @@ header {
 }
 
 .slider6:hover {
-    border-color: #29d43d;
-    background-color: #29d43d;
+    border-color: #016efe;
+    background-color: #016efe;
 }
 
 .slider7 {
@@ -254,8 +254,8 @@ header {
 }
 
 .slider7:hover {
-    border-color: #29d43d;
-    background-color: #29d43d;
+    border-color: #016efe;
+    background-color: #016efe;
 }
 
 .name-price {
@@ -287,7 +287,7 @@ header {
     border-radius: 70%;
 }
 
-/* .btn-green {
+.btn-green {
     display: inline-block;
     margin: 25px 0px;
     background-color: #29d43d;
@@ -295,9 +295,9 @@ header {
     text-decoration: none;
     font-size: 16px;
     border-radius: 70%;
-} */
+}
 
-.btn-blue {
+/* .btn-blue {
     display: inline-block;
     margin: 25px 0px;
     background-color: #016efe;
@@ -305,7 +305,7 @@ header {
     text-decoration: none;
     font-size: 16px;
     border-radius: 70%;
-}
+} */
 
 .descrip {
     padding: 0px 22px 0px 22px;
