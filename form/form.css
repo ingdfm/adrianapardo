@@ -1,0 +1,148 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 2rem;
+}
+
+.form {
+    border-radius: 15px;
+    border-color: black;
+    background-color: aquamarine;
+}
+
+.name {
+    padding: 2em 0em 0em 0em;
+    display: grid;
+    height: 1.5em;
+}
+
+.lastname {
+    padding: 8em 0em 0em 2em;
+    display: grid;
+    height: 1.5em;
+    width: 1px;
+}
+
+.item {
+    padding: 2em 0em 0em 2em;
+    display: grid;
+    height: 1.5em;
+}
+
+.qtn {
+    padding: 2em 0em 0em 2em;
+    display: grid;
+    height: 1.5em;
+}
+
+.phone {
+    padding: 2em 0em 0em 2em;
+    display: grid;
+    height: 1.5em;
+}
+
+/* FOOTER */
+footer {
+    display: column;
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    margin: 0px 20px 12px 0px;
+}
+
+.icon-circle-with-plus {
+    font-size: 50px;
+    transition: all 300ms;
+    /* color: black; */
+}
+
+.container-icons:hover .icon-circle-with-plus {
+    transform: rotateY(180deg);
+    /* color: green; */
+}
+
+.row-icon {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 300ms;
+    opacity: 0;
+    padding: 4px;
+    /* background-color: red; */
+}
+
+.container-icons:hover .row-icon {
+    opacity: 1;
+    position: none;
+}
+
+.row-icon h4 {
+    transform: translate(-13px, 5px);
+}
+
+.row-icon label {
+    font-size: 40px;
+}
+
+.icon1 {
+    transform: translate(70px, 0px) scale(0);
+}
+
+.icon2 {
+    transform: translate(71px, 0px) scale(0);
+}
+
+.icon3 {
+    transform: translate(72px, 0px) scale(0);
+}
+
+.icon4 {
+    transform: translate(73px, 0px) scale(0);
+}
+
+.icon5 {
+    transform: translate(74px, 0px) scale(0);
+}
+
+.icon6 {
+    transform: translate(75px, 0px) scale(0);
+}
+
+.container-icons:hover .icon1 {
+    transform: translate(-28px, 15px) scale(1);
+}
+
+.container-icons:hover .icon2 {
+    transform: translate(-57px, 15px) scale(1);
+}
+
+.container-icons:hover .icon3 {
+    transform: translate(-86px, 15px) scale(1);
+}
+
+.container-icons:hover .icon4 {
+    transform: translate(-115px, 15px) scale(1);
+}
+
+.container-icons:hover .icon5 {
+    transform: translate(-144px, 15px) scale(1);
+}
+
+.container-icons:hover .icon6 {
+    transform: translate(-185px, 15px) scale(1);
+}
+
+.made-with {
+    display: grid;
+    place-items: center;
+    padding-bottom: 12px;
+}
