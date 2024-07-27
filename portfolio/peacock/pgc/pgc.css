@@ -353,6 +353,31 @@ header {
     color: grey;
 }
 
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: -250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+.ventana {
+    background-color: aqua;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+}
+
+#IrVentanaFlotante:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* FOOTER */
 footer {
     display: column;
