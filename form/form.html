@@ -7,21 +7,43 @@
     <title> FORM </title>
 </head>
 <body>
-    <div class="container">
-        <div class="form">
-            <label class="name"> NAME </label>
-            <input type="text"  placeholder="NAME" >
+    <!-- esta opcion es para enviar el email, google ( ( API ) formsubmit ) -->
+    <form action="https://formsubmit.co/deudasmr@gmail.com" method="POST" />
+        <h2> MENSAJE </h2>
+        <div class="input-group">
+            <label for="name"> Name </label>
+            <input type="text" name="name" id="name" placeholder="Name" >
             
-            <label class="lastname"> LAST NAME </label>
-            <input placeholder="LAST NAME" >
-            <label class="item"> ITEM </label>
-            <input placeholder="aca debe estar el nombre del producto" >
-            <label class="qtn"> QTN </label>
-            <input placeholder="QTN" >
-            <label class="phone"> PHONE </label>
-            <input placeholder="PHONE" >
+            <label for="last-name"> Last Name </label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" >
+            
+            <label for="item"> Item </label>
+            <input type="text" name="item" id="item" placeholder="item" >
+            
+            <label for="email"> Email </label>
+            <input type="text" name="email" id="email" placeholder="Quantity" >
+            
+            <label for="phone"> Phone </label>
+            <input type="tel" name="phone" id="phone" placeholder="phone" >
+            
+            <label for="message"> Message </label>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"> </textarea>
+
+            <!-- Opcional -->
+            <!-- <div class="form-txt">
+                <a href="#"> Politica de Privacidad </a>
+                <a href="#"> Terminos y Condiciones </a>
+            </div> -->
+
+            <input class="btn" type="submit" value="Send" >
+
+            <!-- evitar el captcha, value="dominio"-->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5502/index.html" >
+            <!-- value="http://127.0.0.1:5500/index.html" > -->
+            <input type="hidden" name="_captcha" value="false" >
+            
         </div>
-    </div>
+    </form>
 
     <footer>
         <div class="footer">
