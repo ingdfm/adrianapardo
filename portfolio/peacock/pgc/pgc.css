@@ -317,8 +317,8 @@ header {
     text-align: justify;
 }
 
-/* ENVIAR PEDIDO */
-.solicitud {
+/* ENVIAR MENSAJE */
+.message {
     display: grid;
     place-items: center;
 }
