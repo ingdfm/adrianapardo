@@ -98,15 +98,11 @@ header {
     gap: 2rem;
 }
 
-.menu-btn {
-    padding: 2rem 2rem 0rem 2rem;
+.navar .menu-btn {
     color: #676a71;
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
     cursor: pointer;
-    /* Hace que el menu hamburguesa se esconda, se activa en @media */
     display: none;
-    /* Habilita o desabilita el "dibujo" del menu hamburguesa, en este momento no se ve */
-    /* visibility: hidden; */
 }
 
 /* MENU DOWN */
