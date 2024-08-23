@@ -69,6 +69,7 @@ a:hover {
 /* HEADER */
 header {
     position: sticky;
+    padding: 4rem 5px;
     height: auto;
 }
 
@@ -83,7 +84,7 @@ header {
 }
 
 .navbar .logo {
-    padding: 1.5rem 3rem 3rem 3rem;
+    padding-left: 1rem;
 }
 
 .navbar .logo a {
