@@ -125,6 +125,11 @@ header {
     object-fit: cover;
 }
 
+.center-video {
+    margin: 0;
+    width: 300px;
+}
+
 .container .menu {
     display: flex;
     align-items: center;
@@ -132,6 +137,24 @@ header {
 }
 
 /* circulo cambio imagen */
+.slider0 {
+    display: inline-block;
+    margin: 25px 0px;
+    border: #000 solid 1px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 75%;
+    padding: 08px 08px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 70%;
+}
+
+.slider0:hover {
+    border-color: #29d43d;
+    background-color: #29d43d;
+}
+
 .slider1 {
     display: inline-block;
     margin: 25px 0px;
@@ -206,6 +229,7 @@ header {
 
 .slider5 {
     display: inline-block;
+    content: normal;
     margin: 25px 0px;
     border: #000 solid 1px;
     border-radius: 50%;
