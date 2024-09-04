@@ -1,0 +1,264 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; ( "paraliza" la pagina ) */
+    font-family: "Ubuntu", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #109f8c;
+}
+
+.btn-wsp:hover {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    padding: 4rem 5px;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    left: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    padding-left: 1rem;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navar .menu-btn {
+    color: #676a71;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* MENU DOWN */
+.menu-down {
+    /* habilita o desabilita la ventana emergente con el menu */
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 120px;
+    height: 0;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-down.open {
+    height: 150px;
+}
+
+.menu-down li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-down .action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* SECTION SLIDER START */
+.slider {
+    /* width: 75vw; */
+    height: auto;
+    margin-top: 5rem;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    /* margin: auto; */
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+    width: calc(200px * 12);
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 100%;
+    padding: 10px;
+}
+
+/* SECTION SLIDER END */
+
+
+/* PORTFOLIO START */
+.container {
+    /* position: relative; */
+    padding: 70px 10px 25px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #fff;
+    margin: 10px 10px 30px 10px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 83%;
+    object-fit: cover;
+    transition: transform .75s;
+}
+
+.card:hover .card-image {
+    transform: scale(1.15);
+}
+
+.name-price {
+    display: block;
+    margin-top: 28rem;
+}
+
+
+.name {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: normal;
+    padding: 0rem 1rem 3rem 3rem;
+}
+
+.card {
+    box-shadow: 2px 2px 4px #000000;
+}
+
+/* PORTFOLIO END */
+
+.logo-end {
+    padding: 3rem 0rem 0rem 0rem;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px 0 0 0;
+    height: calc(100hv - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #161718;
+    /* color: #f5f5f5; */
+}
+
+.social {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.social-links {
+    margin-top: 20px;
+    margin-bottom: 400px;
+}
+
+.made-with {
+    padding: 30px 30px;
+    text-align: center;
+}
+
+
+
+/*  RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action-btn {
+        display: none;
+    }
+
+    .navbar .menu-btn {
+        display: block;
+    }
+
+    .menu-down {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-down {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+
+/* SECTION SLIDER START */
+/* nos permite animar las img's section slider*/
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px *6));
+        transform: translateX(calc(-200px *6));
+    }
+}
+
+/* SECTION SLIDER END */
