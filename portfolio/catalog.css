@@ -106,40 +106,10 @@ header {
     justify-content: center;
 }
 
-/* SECTION SLIDER START */
-.slider {
-    /* width: 75vw; */
-    height: auto;
-    margin-top: 5rem;
-    margin-right: 1.5em;
-    margin-left: 1.5em;
-    /* margin: auto; */
-    overflow: hidden;
-}
-
-.slider .slide-track {
-    display: flex;
-    animation: scroll 10s linear infinite;
-    -webkit-animation: scroll 10s linear infinite;
-    width: calc(200px * 12);
-}
-
-.slider .slide {
-    width: 200px;
-}
-
-.slider .slide img {
-    width: 100%;
-    padding: 10px;
-}
-
-/* SECTION SLIDER END */
-
-
 /* PORTFOLIO START */
 .container {
     /* position: relative; */
-    padding: 70px 10px 25px 10px;
+    padding: 90px 10px 25px 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
