@@ -1,0 +1,358 @@
+/* RESET */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+    background-size: cover;
+    background-position: center;
+    font-family: "Ubuntu", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #109f8c;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    padding: 4rem 5px;
+    height: auto;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    left: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    padding-left: 1rem;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .menu-btn {
+    color: #676a71;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* MENU DOWN START */
+.menu-down {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 120px;
+    height: 0;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.menu-down.open {
+    height: 150px;
+}
+
+.menu-down li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-down .action-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* PORTFOLIO START */
+.container {
+    padding: 80px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    position: relative;
+    width: 500px;
+    height: 367px;
+    background: #fff;
+    margin: 10px 10px 30px 10px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card-image {
+    inset: 0;
+    width: 100%;
+    height: 83%;
+    object-fit: cover;
+}
+
+.container .menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* circulo cambio imagen */
+.slider {
+    display: inline-block;
+    margin: 25px 0px;
+    border: #000 solid 1px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 75%;
+    padding: 08px 08px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 70%;
+}
+
+.slider:hover {
+    border-color: red;
+    background-color: red;
+}
+
+.name-price {
+    display: grid;
+    place-items: center;
+}
+
+.name {
+    color: #000;
+}
+
+.price {
+    padding-top: 1rem;
+    color: #656565;
+}
+
+.descrip {
+    padding: 50px 22px 0px 22px;
+}
+
+.descrip-text {
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+    color: #ed121f;
+}
+
+/* ENVIAR MENSAJE */
+.message {
+    padding-top: 3rem;
+    display: grid;
+    place-items: center;
+}
+
+/* COMPRAR */
+.buy {
+    padding-top: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    text-align: center;
+    background-color: #eee;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+}
+
+.btn:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+}
+
+.btn:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.btn:disabled {
+    cursor: auto;
+    color: grey;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: -250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+/* FOOTER */
+footer {
+    display: column;
+}
+
+.footer {
+    display: flex;
+    justify-content: right;
+    margin: 35px 20px 12px 0px;
+}
+
+.icon-circle-with-plus {
+    font-size: 50px;
+    transition: all 300ms;
+    /* color: black; */
+}
+
+.container-icons:hover .icon-circle-with-plus {
+    transform: rotateY(180deg);
+    /* color: green; */
+}
+
+.row-icon {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    transition: all 300ms;
+    opacity: 0;
+    padding: 4px;
+    /* background-color: red; */
+}
+
+.container-icons:hover .row-icon {
+    opacity: 1;
+    position: none;
+}
+
+.row-icon h4 {
+    transform: translate(-13px, 5px);
+}
+
+.row-icon label {
+    font-size: 40px;
+}
+
+.icon1 {
+    transform: translate(70px, 0px) scale(0);
+}
+
+.icon2 {
+    transform: translate(71px, 0px) scale(0);
+}
+
+.icon3 {
+    transform: translate(72px, 0px) scale(0);
+}
+
+.icon4 {
+    transform: translate(73px, 0px) scale(0);
+}
+
+.icon5 {
+    transform: translate(74px, 0px) scale(0);
+}
+
+.icon6 {
+    transform: translate(75px, 0px) scale(0);
+}
+
+.container-icons:hover .icon1 {
+    transform: translate(-28px, 15px) scale(1);
+}
+
+.container-icons:hover .icon2 {
+    transform: translate(-57px, 15px) scale(1);
+}
+
+.container-icons:hover .icon3 {
+    transform: translate(-86px, 15px) scale(1);
+}
+
+.container-icons:hover .icon4 {
+    transform: translate(-115px, 15px) scale(1);
+}
+
+.container-icons:hover .icon5 {
+    transform: translate(-144px, 15px) scale(1);
+}
+
+.container-icons:hover .icon6 {
+    transform: translate(-185px, 15px) scale(1);
+}
+
+.made-with {
+    display: grid;
+    place-items: center;
+    padding-bottom: 12px;
+}
+
+
+
+
+/*  RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+
+    .navbar .links,
+    .navbar .action-btn {
+        display: none;
+    }
+
+    .navbar .menu-btn {
+        display: block;
+    }
+
+    .menu-down {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-down {
+        left: 2rem;
+        width: unset;
+    }
+}
