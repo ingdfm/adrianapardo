@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/portfolio/fringes/fred/fred.css">
+    <script src="https://kit.fontawesome.com/dd1f15199d.js" crossorigin="anonymous"></script>
+    <title> ADRIANA PARDO </title>
+    <link rel="icon" href="/icons/logo-pestana.ico">
+</head>
+<body>
+    <header>
+        <!-- Menu Start -->
+        <div class="navbar">
+            <div class="logo"> <a href="/index.html"> <img src="/icons/LOGO.png" style="width: 350px; height: 160px;"> </a> </div>
+            <ul class="links">
+                <!-- <li><a href="index.html"> HOME </a></li> -->
+                <li><a href="/about.html"> ABOUT </a></li>
+                <li><a href="/portfolio/catalog.html"> CATALOG </a></li>
+                <li><a href="/form/form.html"> CONTACT </a></li>
+                <li><a href="/es/index.html"> ES </a></li>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="menu-down">
+                <!-- <li><a href="index.html"> HOME </a></li> -->
+                <li><a href="/about.html"> ABOUT </a></li>
+                <li><a href="/portfolio/catalog.html"> CATALOG </a></li>
+                <li><a href="/form/form.html"> CONTACT </a></li>
+                <li><a href="/es/index.html"> ES </a></li>
+            </div>
+        </div>
+        <!-- Menu End -->
+    </header>
+
+    <section>
+        <div class="container">            
+            <div class="card">
+                <li id="slider1"> <img src="1.png" class="card-image"> </a> </li>
+                <li id="slider2"> <img src="2.png" class="card-image"> </a> </li>
+                <li id="slider3"> <img src="3.png" style="width: 387px; height: 364px;" class="card-image"> </a> </li>
+                <li id="slider4"> <img src="4.png" class="card-image"> </a> </li>
+                <li id="slider5"> <img src="5.png" class="card-image"> </a> </li>
+                <li id="slider6"> <img src="6.png" class="card-image"> </a> </li>
+                <li id="slider7"> <img src="7.png" class="card-image"> </a> </li>
+            </div>
+
+            <!-- Selector circulos inferiores -->
+            <nav>
+                <ul class="menu">
+                    <div>
+                    <a class="slider" href="#slider1"> </a>
+                    <a class="slider" href="#slider2"> </a>
+                    <a class="slider" href="#slider3"> </a>
+                    <a class="slider" href="#slider4"> </a>
+                    <a class="slider" href="#slider5"> </a>
+                    <a class="slider" href="#slider6"> </a>
+                    <a class="slider" href="#slider7"> </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="name-price">
+            <div class="name"> <h3> Red Fringes Earrings </h3> </div>
+            <div class="price"> <h3> $45.00 USD </h3> </div>
+        </div>
+        <br/ >
+
+        <div class="descrip">
+            <h2> Descripción </h2>
+            <div class="descrip-text">
+                <p> Descubre los aretes de cuentas hechos a mano en punto peyote. Moderno, único y perfecto para mujeres. ¡Un regalo reflexivo! ¡Compra ahora y crea momentos inolvidables! </p>
+                <br />
+                <p> Estos pendientes los hice con mucha dedicación, prestando atención a cada detalle y poniendo mi mejor esfuerzo en darle un toque especial a cada pieza. Todo el producto está 100% hecho a mano. Estoy segura de que te encantarán estos pendientes tanto como a mí me encantó hacerlos.</p>
+            </div>
+        </div>
+
+        <!-- MENSAJE -->
+        <div class="message">
+            <a href="/form/form.html" class="btn"> MENSAJE </a>
+        </div>
+        
+        <!-- PEDIDO -->
+        <div class="buy">
+            <a href="/buy/buy.html" class="btn"> HOW TO BUY? </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <!-- button icons -->
+            <div class="container-icons">
+                <a href="#"> <div class="row-icon icon1"> <img src="/icons/Facebook.png" width="20"> </div> </a>
+                <a href="#"> <div class="row-icon icon2"> <img src="/icons//Instagram.png" width="20"> </div> </a>
+                <a href="#"> <div class="row-icon icon3"> <img src="/icons/Etsy.webp" width="20"> </div> </a>
+                <a href="#"></a> <div class="row-icon icon4"> <img src="/icons/email.png" width="20"> </div>
+                <a href="#"></a> <div class="row-icon icon5"> <img src="/icons/whatsapp2.png" width="20"> </div>
+                <a href="#"></a> <div class="row-icon icon6"> <img src="/icons/spain-flag.png" width="32"> </div>
+                <div class="icon-circle-with-plus"> <img src="/icons/redes.png" width="80"> </div>
+            </div>    
+        </div>
+        <br />
+
+        <div class="made-with">
+            <a href="https://diegomartinweb.vercel.app/"> <p> Diego Martin </p> </a>
+            <p> © 2024 </p>
+        </div>
+    </footer>
+
+    <!-- MENU HAMBURGER START -->
+    <script>
+        const toggleBtn = document.querySelector('.menu-btn')
+        const toggleBtnIcon = document.querySelector('.menu-btn i')
+        const MenuDown = document.querySelector('.menu-down')
+
+        toggleBtn.onclick = function () {
+            MenuDown.classList.toggle('open')
+            const isOPen = MenuDown.classList.contains('open')
+
+            toggleBtnIcon.classList = isOPen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
