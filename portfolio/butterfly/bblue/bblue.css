@@ -161,7 +161,8 @@ header {
 
 .price {
     padding-top: 1rem;
-    color: #656565;
+    /* color: #656565; */
+    color: red;
 }
 
 .descrip {
@@ -172,7 +173,7 @@ header {
     padding-top: 30px;
     font-size: 20px;
     text-align: justify;
-    color: #ed121f;
+    color: #000;
 }
 
 /* ENVIAR MENSAJE */
@@ -197,7 +198,7 @@ header {
     font-size: 1rem;
     width: 10em;
     border-radius: 1rem;
-    color: lightcoral;
+    color: #109f8c;
     box-shadow: 0 0.4rem #dfd9d9;
     cursor: pointer;
 }
@@ -209,8 +210,8 @@ header {
 }
 
 .btn:hover:not(:disabled) {
-    background: lightcoral;
-    color: white;
+    background: white;
+    color: purple;
     text-shadow: 0 0.1rem #bcb4b4;
 }
 
