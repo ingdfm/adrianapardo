@@ -168,8 +168,12 @@ header {
     padding: 50px 22px 0px 22px;
 }
 
+/* .descrip {
+    padding: 22px 22px 0px 22px;
+} */
+
 .descrip-text {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     font-size: 20px;
     text-align: justify;
     color: #ed121f;
